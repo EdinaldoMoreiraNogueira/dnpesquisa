@@ -2,6 +2,7 @@ import React from 'react';
 import { ReactComponent as SetaIcon } from '../../assets/Seta.svg'
 import { ReactComponent as GameImage } from '../../assets/GAMER.svg'
 import './style.css';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
               <h3 className="home-text-subtitle">
               Clique no botão abaixo e saiba quais são os jogos que os gamers estão escolhendo!
               </h3>
+              <Link to="/records">
               <div className="home-actions">
                   <button className="home-btn">
                   QUERO SABER QUAIS SÃO
@@ -22,6 +24,7 @@ const Home = () => {
                       <SetaIcon/>
                   </div>
               </div>
+              </Link>
           </div>
           <GameImage className="home-image"/>
       </div> 
